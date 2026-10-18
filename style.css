@@ -1,0 +1,186 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+    font-size: 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.container.small {
+    max-width: 650px;
+}
+
+h1 {
+    margin: 0 0 12px;
+    font-size: 26px;
+}
+
+.subtitle {
+    margin: 0 0 30px;
+    color: #555;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+th, td {
+    padding: 14px 12px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+th {
+    background: #edf3ff;
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background: #f8faff;
+}
+
+.badge {
+    font-weight: bold;
+}
+
+.lulus {
+    color: #21834a;
+}
+
+.tidak-lulus {
+    color: #d63838;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #2864df;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #174fbd;
+}
+
+.button.secondary {
+    background: #6c757d;
+}
+
+.button.secondary:hover {
+    background: #565e64;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.detail-item {
+    padding: 14px;
+    margin-bottom: 10px;
+    background: #f7f8fc;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+.detail-item strong {
+    display: inline-block;
+    min-width: 135px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #2864df;
+}
+
+textarea {
+    min-height: 115px;
+    resize: vertical;
+}
+
+.message {
+    margin: 15px 0;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 18px 10px;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .detail-item strong {
+        min-width: 0;
+    }
+}
